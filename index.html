@@ -3,9 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/respansive.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<!-- icons : unicons, xeicon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!-- js -->
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="./js/script.js"></script>
 <title>정다겸 포트폴리오</title>
 </head>
 <body>
-    <h2>정다겸 포트폴리오</h2>
+    <!-- ========================= quick__menu ========================= -->
+    <div id="quick__btn">
+        <ul class="quick__menu">
+            <li class="on">
+                <a href="#" title="github 사이트 이동">
+                    <i class="uil uil-github"></i>
+                </a>
+            </li>
+            <li class="on">
+                <a href="mailto:dagyeoms1004@gmail.com" title="e-mail 보내기">
+                    <i class="uil uil-envelope"></i>
+                </a>
+            </li>
+            <li class="on">
+                <a href="tel:01066291482" title="연락처 보기">
+                    <i class="uil uil-phone"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- ========================= header ========================= -->
+    <header class="header" id="header">
+        <div class="header-inner flex">
+            <a href="#" id="logo">
+              <img class="logo__img" src="./image/logo.png" alt="로고 이미지">
+            </a>
+            <div class="nav__container">
+                <ul class="nav__menu flex">
+                    <li class="nav__item">
+                        <a href="#" data-link="#home" class="nav__link">
+                            <i class="uil uil-estate nav__icon"></i> HOME
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>ABOUT ME
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#skills" class="nav__link">
+                            <i class="uil uil-file nav__icon"></i>
+                            SKILL
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            POLTFOLIO
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" data-link="#services" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>
+                            CONTACT
+                        </a>
+                    </li>
+                    <i class="uil uil-times nav__close" id="navClose"></i>
+                </ul>
+            </div>
+            <div class="nav__btns flex">
+                <i class="uil uil-sun change-theme" id="buttonLight"></i>
+                <i class="uil uil-moon change-theme" id="buttonDark"></i>
+                <i class="uil uil-apps" id="navToggle"></i>
+            </div>
+        </div>
+    </header>
+    <!-- ========================= main ========================= -->
+    <section class="home" id="home">
+            <div class="home__intro">
+                <div class="home__desc">
+                    <h1 class="home__title">Portfolio</h1>
+                    <h2 class="home__subtitle">my special work</h2>   
+                </div>
+                <div class="animation__line left"></div>
+                <div class="animation__line right"></div>
+                <div class="animation__line top"></div>
+                <div class="animation__line bottom"></div>
+            </div>
+    </section>
+    <!-- ========================= about ========================= -->
+    <section class="about inner" id="about">
+        <div class="about__container">
+            <div class="section__title--wrap">
+                <h1 class="section__title">About Me</h1>
+                <h2 class="section__subtitle">My introduction</h2>
+            </div>
+            <img class="about__bg" src="./image/about-bg-1.png" alt="">
+
+            <div class="about__desc">
+                <div class="about__img">
+                    <img src="./image/20210326_141757.png" alt="">
+                </div>
+                <div class="about__info--wrap">
+                    <p class="about__info--para">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam totam cum minus eveniet modi omnis, odit magnam dolor adipisci illo perferendis cupiditate fugit error harum quod sed corporis id voluptatum.
+                    </p>
+                    <div class="about__info">
+                    </div>
+                    <!-- 
+                        - downlaod="파일명을 작성해주세요"
+                        - href="업로드한 파일 경로를 작성해주세요"
+                    -->
+                    <a download="웹퍼블리셔_이력서_박한성.pdf" href="pdf/웹퍼블리셔_이력서_박한성.pdf" class="about__download button">
+                        이력서 다운로드
+                        <i class="uil uil-file-download-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

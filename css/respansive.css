@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* ========================= Tablet ========================= */
+@media (max-width: 768px){
+    /*
+        글로벌 변수를 통해 폰트 사이즈를 한번에 반응형에 적용하게 됩니다
+    */
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1.125rem;
+        --big-font-size: 2rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .75rem;
+    }
+    .inner {
+        padding: 2rem 2rem;
+    }
+ /* ======================== intro ======================== */
+    .intro__title {
+        display: block;
+        font-size: var(--big-font-size);
+    }
+    .header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--body-color);
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        padding: 0 1rem;
+        z-index: var(--z-fixed);
+    }
+    .home.inner {
+        padding: 0 4rem;
+        max-width: 700px;
+    }
+    .nav__container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        width: 100%;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        transition: .3s;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    .nav__container.visible {
+        transform: translateY(0);
+    }
+    .nav__menu {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .nav__item {
+        width: 33.3333%;
+        margin-right: 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__icon {
+        margin-left: 0;
+        display: block;
+    }
+    #buttonLight {
+        margin-right: 1rem;
+    }
+    #buttonDark {
+        margin-right: 1rem;
+    }
+    .nav__close {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #navToggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+    /* ======================== Home ======================== */
+    #home {
+        padding-top: 3.5rem;
+    }
+    .home__profile {
+        width: 200px;
+        height: 200px;
+    }
+    .home__social {
+        text-align: center;
+        left: 1rem;
+        top: 61%;
+    }
+    /* ========================= About ========================= */
+    .about__download {
+        margin-top: var(--mb-1);
+    }
+}
+
+/* ========================= Mobile ========================= */
+@media (max-width: 568px){
+    #home {
+        flex-direction: column;
+    }
+    .home__img {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    .about__desc {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about__img {
+        width: 80%;
+    }
+    .about__info--wrap {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .about__info--para {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    /* ====================== Skills ===================== */
+    .skills__list {
+        flex-direction: column;
+    }
+    .skills__item {
+        width: auto;
+    }
+
+    /* ==================== Qualification =============== */
+    .qualification__item {
+        width: 80%;
+    }
+
+    /* ==================== Services =================== */
+    .service__content {
+        flex-wrap: wrap;
+    }
+    .service__item {
+        margin-right: 2%;
+        width: 49%;
+        flex: auto;
+    }
+    .service__item:nth-child(1) {
+        width: 49%;
+    }
+    .service__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    /* =================== Portfolio ================== */
+    .slider__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slick__button {
+        align-self: center;
+    }
+
+    /* ===================== Footer =================== */
+    .footer {
+        padding-top: 0;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__links {
+        margin: var(--mb-1) 0;
+    }
+    .footer__link {
+        display: block;
+        margin: var(--mb-1) 0;
+        text-align: left;
+    }
+}
