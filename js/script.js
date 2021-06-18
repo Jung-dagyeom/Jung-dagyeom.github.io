@@ -1,14 +1,14 @@
 'use strict';
 
 $(function(){
-    /* ================= change theme ===================== */
+    /* ================= change mode ===================== */
     $('#buttonDark').click(function(){
         $(this).hide();
-        $('body').addClass('dark-theme');
+        $('body').addClass('dark-mode');
         $('#buttonLight').show();
     })
     $('#buttonLight').click(function(){
-        $('body').removeClass('dark-theme');
+        $('body').removeClass('dark-mode');
         $('#buttonDark').show();
         $(this).hide();
     })

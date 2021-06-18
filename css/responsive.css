@@ -1,14 +1,10 @@
 @charset "utf-8";
 
-/* ========================= Tablet ========================= */
+/* >>>>>>>>>>>>>>> Tablet >>>>>>>>>>>>>>> */
 @media (max-width: 768px){
-    /*
-        글로벌 변수를 통해 폰트 사이즈를 한번에 반응형에 적용하게 됩니다
-    */
     :root {
         --h1-font-size: 1.5rem;
         --h2-font-size: 1.25rem;
-        --h3-font-size: 1.125rem;
         --big-font-size: 2rem;
         --normal-font-size: .938rem;
         --small-font-size: .75rem;
@@ -16,20 +12,43 @@
     .inner {
         padding: 2rem 2rem;
     }
- /* ======================== intro ======================== */
+/* ---------- intro ---------- */
     .intro__title {
         display: block;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        width: 100%;
+        text-align: center;
         font-size: var(--big-font-size);
+        color: var(--white-color);
     }
+    .intro__bg {
+        display: none;
+    }
+    .intro__contents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vw;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+/* ---------- header ---------- */
     .header {
         position: fixed;
         bottom: 0;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
-        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        box-shadow: 0 0 5px var(--gray-color);
         padding: 0 1rem;
+        border: none;
         z-index: var(--z-fixed);
+    }
+    .header-inner {
+        padding: 1rem 1rem;
     }
     .home.inner {
         padding: 0 4rem;
@@ -88,7 +107,7 @@
         font-size: 2rem;
     }
 
-    /* ======================== Home ======================== */
+/* ---------- Home ---------- */
     #home {
         padding-top: 3.5rem;
     }
@@ -101,13 +120,27 @@
         left: 1rem;
         top: 61%;
     }
-    /* ========================= About ========================= */
+/* ----------- About ----------= */
+    .about .section__title--wrap {
+        margin-top: 10%;
+    }
     .about__download {
         margin-top: var(--mb-1);
     }
+    .about__frame {
+        border: 1px solid #000;
+        width: 80%;
+    }
+/* ----------- footer ----------= */
+    footer {
+        padding-bottom: 4rem;
+    }
+    .footer__copy {
+        padding-bottom: 1rem;
+    }
 }
 
-/* ========================= Mobile ========================= */
+/* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
 @media (max-width: 568px){
     #home {
         flex-direction: column;
@@ -120,19 +153,16 @@
         flex-direction: column;
         align-items: center;
     }
-    .about__img {
-        width: 80%;
-    }
-    .about__info--wrap {
+    /* .about__info--wrap {
         width: 80%;
         margin-bottom: 1rem;
-    }
-    .about__info--para {
+    } */
+    /* .about__info--para {
         margin: 1rem 0;
         text-align: center;
-    }
+    } */
 
-    /* ====================== Skills ===================== */
+/* ---------- Skills ---------- */
     .skills__list {
         flex-direction: column;
     }
@@ -140,12 +170,12 @@
         width: auto;
     }
 
-    /* ==================== Qualification =============== */
+/* ---------- Qualification ----------*/
     .qualification__item {
         width: 80%;
     }
 
-    /* ==================== Services =================== */
+    /* ---------- Services ---------- */
     .service__content {
         flex-wrap: wrap;
     }
@@ -161,7 +191,7 @@
         margin-right: 0;
     }
 
-    /* =================== Portfolio ================== */
+    /* ---------- Portfolio ---------- */
     .slider__content {
         flex-direction: column;
         text-align: center;
@@ -170,19 +200,8 @@
         align-self: center;
     }
 
-    /* ===================== Footer =================== */
-    .footer {
-        padding-top: 0;
-    }
-    .footer__container {
-        flex-direction: column;
-    }
-    .footer__links {
-        margin: var(--mb-1) 0;
-    }
-    .footer__link {
-        display: block;
-        margin: var(--mb-1) 0;
-        text-align: left;
+    /* ---------- Footer ---------- */
+    .footer__copy {
+        padding-bottom: 3rem;
     }
 }
