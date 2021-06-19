@@ -16,9 +16,9 @@
     .intro__title {
         display: block;
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 50%;
-        transform: translate(-50%, -25%);
+        transform: translate(-50%, -15%);
         width: 100%;
         text-align: center;
         font-size: var(--big-font-size);
@@ -36,7 +36,7 @@
         text-align: center;
         transform: translate(-50%, -50%);
     }
-/* ---------- header ---------- */
+    /* ---------- header ---------- */
     .header {
         position: fixed;
         bottom: 0;
@@ -175,23 +175,22 @@
         width: 80%;
     }
 
-    /* ---------- Services ---------- */
-    .service__content {
+    /* ---------- graphic ---------- */
+    .works__content {
         flex-wrap: wrap;
     }
-    .service__item {
+    .works__item {
         margin-right: 2%;
         width: 49%;
         flex: auto;
     }
-    .service__item:nth-child(1) {
+    .works__item:nth-child(1) {
         width: 49%;
     }
-    .service__item:nth-child(2) {
+    .works__item:nth-child(2) {
         margin-right: 0;
     }
-
-    /* ---------- Portfolio ---------- */
+    /* ---------- web ---------- */
     .slider__content {
         flex-direction: column;
         text-align: center;
@@ -199,7 +198,6 @@
     .slick__button {
         align-self: center;
     }
-
     /* ---------- Footer ---------- */
     .footer__copy {
         padding-bottom: 3rem;
