@@ -8,7 +8,7 @@
         --primary-color: hsl(var(--hue-color), 69%, 61%);
         --white-color: #fff;
         --black-color: hsl(var(--hue-color), 8%, 15%);
-        --body-color: hsl(var(--hue-color), 60%, 99%);
+        --body-color: hsl(var(--hue-color), 70%, 99%);
         /* ----- point colors ----- */ 
         --yellow-color: rgb(253, 232, 114);
         --blue-color: #9bbce2;
@@ -127,7 +127,7 @@
         padding-top: 1rem;
         z-index: var(--z-fixed);
         background: var(--body-color);
-        border-bottom: 6px solid var(--gray-color);
+        border-bottom: 6px solid var(--white-color);
     }
     .header-inner {
         max-width: 1470px;

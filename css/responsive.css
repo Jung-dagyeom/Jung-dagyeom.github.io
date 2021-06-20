@@ -50,10 +50,6 @@
     .header-inner {
         padding: 1rem 1rem;
     }
-    .home.inner {
-        padding: 0 4rem;
-        max-width: 700px;
-    }
     .nav__container {
         position: fixed;
         bottom: 0;
