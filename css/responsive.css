@@ -16,12 +16,12 @@
     .intro__title {
         display: block;
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 50%;
         transform: translate(-50%, -15%);
         width: 100%;
         text-align: center;
-        font-size: var(--big-font-size);
+        font-size: 2.5rem;
         color: var(--white-color);
     }
     .intro__bg {
@@ -36,6 +36,9 @@
         text-align: center;
         transform: translate(-50%, -50%);
     }
+    .copyright {
+        display: block;
+    }
     /* ---------- header ---------- */
     .header {
         position: fixed;
@@ -48,7 +51,10 @@
         z-index: var(--z-fixed);
     }
     .header-inner {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
+    }
+    #logo {
+        padding-bottom: 0;
     }
     .nav__container {
         position: fixed;
@@ -63,6 +69,7 @@
     }
     .nav__container.visible {
         transform: translateY(0);
+        background: var(--white-color);
     }
     .nav__menu {
         justify-content: flex-start;
@@ -104,46 +111,42 @@
     }
 
 /* ---------- Home ---------- */
-    #home {
-        padding-top: 3.5rem;
-    }
-    .home__profile {
-        width: 200px;
-        height: 200px;
-    }
-    .home__social {
-        text-align: center;
-        left: 1rem;
-        top: 61%;
-    }
+.home__title {
+    font-size: 3rem;
+}
 /* ----------- About ----------= */
     .about .section__title--wrap {
-        margin-top: 10%;
+        margin-top: 1rem;
     }
-    .about__download {
-        margin-top: var(--mb-1);
+    .about .section__title {
+        font-size: var(--big-font-size);
     }
     .about__frame {
         width: 80%;
     }
 /* ----------- footer ----------= */
     .footer__copy {
-        padding-bottom: 4rem;
+        padding-bottom: 2.5rem;
+    }
+    .footer.inner {
+       padding-top: 0;
+    }
+    .footer__logo {
+        display: none;
     }
 }
 
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
 @media (max-width: 568px){
+    .copyright {
+        font-size: var(--small-font-size);
+    }
     #home {
         flex-direction: column;
     }
     .home__img {
         order: -1;
         margin-bottom: 1rem;
-    }
-    .about__desc {
-        flex-direction: column;
-        align-items: center;
     }
     /* .about__info--wrap {
         width: 80%;
@@ -155,12 +158,6 @@
     } */
 
 /* ---------- Skills ---------- */
-    .skills__list {
-        flex-direction: column;
-    }
-    .skills__item {
-        width: auto;
-    }
 
 /* ---------- Qualification ----------*/
     .qualification__item {
