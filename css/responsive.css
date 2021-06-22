@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* >>>>>>>>>>>>>>> Tablet >>>>>>>>>>>>>>> */
+@media (max-width: 768px){
+    :root {
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --big-font-size: 2rem;
+        --normal-font-size: .938rem;
+        --small-font-size: .75rem;
+    }
+    .inner {
+        padding: 2rem 2rem;
+    }
+/* ---------- intro ---------- */
+    .intro__title {
+        display: block;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -15%);
+        width: 100%;
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--white-color);
+    }
+    .intro__bg {
+        display: none;
+    }
+    .intro__contents {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vw;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .copyright {
+        display: block;
+    }
+    /* ---------- header ---------- */
+    .header {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0 5px var(--gray-color);
+        padding: 0 1rem;
+        border: none;
+        z-index: var(--z-fixed);
+    }
+    .header-inner {
+        padding: 2rem 1rem;
+    }
+    #logo {
+        padding-bottom: 0;
+    }
+    .nav__container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        transform: translateY(100%);
+        width: 100%;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 0 5px rgba(0,0,0,.5);
+        transition: .3s;
+        border-radius: 1.5rem 1.5rem 0 0;
+    }
+    .nav__container.visible {
+        transform: translateY(0);
+        background: var(--white-color);
+    }
+    .nav__menu {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .nav__item {
+        width: 33.3333%;
+        margin-right: 0;
+        text-align: center;
+        padding: 1rem;
+    }
+    .nav__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__icon {
+        margin-left: 0;
+        display: block;
+    }
+    #buttonLight {
+        margin-right: 1rem;
+    }
+    #buttonDark {
+        margin-right: 1rem;
+    }
+    .nav__close {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #navToggle {
+        display: block;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+
+/* ---------- Home ---------- */
+.home__title {
+    font-size: 3rem;
+}
+/* ----------- About ----------= */
+    .about .section__title--wrap {
+        margin-top: 1rem;
+    }
+    .about .section__title {
+        font-size: var(--big-font-size);
+    }
+    .about__frame {
+        width: 70vw;
+        height: 70vh;
+
+    }
+/* ----------- footer ----------= */
+    .footer__copy {
+        padding-bottom: 2.5rem;
+    }
+    .footer.inner {
+       padding-top: 0;
+    }
+    .footer__logo {
+        display: none;
+    }
+}
+
+/* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
+/* @media (max-width: 568px){ */
+@media (max-width: 587px){
+
+    .copyright {
+        font-size: var(--small-font-size);
+    }
+    #home {
+        flex-direction: column;
+    }
+    .home__img {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    /* .about__info--wrap {
+        width: 80%;
+        margin-bottom: 1rem;
+    } */
+    /* .about__info--para {
+        margin: 1rem 0;
+        text-align: center;
+    } */
+
+/* ---------- Skills ---------- */
+
+/* ---------- Qualification ----------*/
+    .qualification__item {
+        width: 80%;
+    }
+
+    /* ---------- graphic ---------- */
+    .works__content {
+        background: red;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .works__item {
+        margin-right: 2%;
+        width: 49%;
+        flex: auto;
+    }
+    .works__item:nth-child(1) {
+        width: 49%;
+    }
+    .works__item:nth-child(2) {
+        margin-right: 0;
+    }
+    /* ---------- web ---------- */
+    .slider__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slick__button {
+        align-self: center;
+    }
+    /* ---------- Footer ---------- */
+    .footer__copy {
+        padding-bottom: 3rem;
+    }
+}
