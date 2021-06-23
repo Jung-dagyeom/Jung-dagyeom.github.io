@@ -31,10 +31,24 @@ $(function(){
         $('.nav__container').toggleClass('visible');
     })
     /* ================= skill tabs ================= */
+    
+    
     // $('.skills__header').click(function(){
     //     $(this).children('.skill__icon--arrow').toggleClass('active');
     //     $(this).siblings('.skill__data').stop().slideToggle();
     // })
+
+    var $skillsItem = $('.skills__item');
+    var $skillsPercentage = $('.skills__percentage');
+
+    $skillsPercentage.hide();
+    $skillsItem.click(function(){
+
+        $(this).find('.skills__stack').toggle();
+        $(this).find('.skills__percentage').toggle();
+
+    })
+
 
     /* ================= qualifictaion ================= */
     var $qualificationTab = $('.qualification__tab');

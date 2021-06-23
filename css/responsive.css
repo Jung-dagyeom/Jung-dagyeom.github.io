@@ -121,11 +121,6 @@
     .about .section__title {
         font-size: var(--big-font-size);
     }
-    .about__frame {
-        width: 70vw;
-        height: 70vh;
-
-    }
 /* ----------- footer ----------= */
     .footer__copy {
         padding-bottom: 2.5rem;
@@ -152,22 +147,13 @@
         order: -1;
         margin-bottom: 1rem;
     }
-    /* .about__info--wrap {
-        width: 80%;
-        margin-bottom: 1rem;
-    } */
-    /* .about__info--para {
-        margin: 1rem 0;
-        text-align: center;
-    } */
 
-/* ---------- Skills ---------- */
+/* ---------- about ---------- */
+  .about__frame {
+        width: 80vw;
+        height: 80vh;
 
-/* ---------- Qualification ----------*/
-    .qualification__item {
-        width: 80%;
     }
-
     /* ---------- graphic ---------- */
     .works__content {
         background: red;
