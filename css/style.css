@@ -427,7 +427,7 @@
         padding-bottom: 80%;
     }
     .skills__item:hover {
-        transform: scale(1.1);
+        /* box-shadow: 8px 7px 5px var(--gray-color); */
     }
     .skills__item:nth-of-type(7n+5) {
         margin-left: 12.5%;
