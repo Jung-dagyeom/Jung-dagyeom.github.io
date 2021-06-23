@@ -418,7 +418,6 @@
         position: relative;
         visibility: hidden;
         transition: .9s;
-        /* transform-style:preserve-3d; */
         cursor: pointer;
     }
     .skills__item::after {

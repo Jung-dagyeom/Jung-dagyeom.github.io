@@ -31,8 +31,6 @@ $(function(){
         $('.nav__container').toggleClass('visible');
     })
     /* ================= skill tabs ================= */
-    
-    
     // $('.skills__header').click(function(){
     //     $(this).children('.skill__icon--arrow').toggleClass('active');
     //     $(this).siblings('.skill__data').stop().slideToggle();
