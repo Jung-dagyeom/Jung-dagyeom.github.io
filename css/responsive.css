@@ -121,9 +121,6 @@
     .about .section__title {
         font-size: var(--big-font-size);
     }
-    .about__frame {
-        width: 80%;
-    }
 /* ----------- footer ----------= */
     .footer__copy {
         padding-bottom: 2.5rem;
@@ -137,7 +134,9 @@
 }
 
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
-@media (max-width: 568px){
+/* @media (max-width: 568px){ */
+@media (max-width: 587px){
+
     .copyright {
         font-size: var(--small-font-size);
     }
@@ -148,25 +147,18 @@
         order: -1;
         margin-bottom: 1rem;
     }
-    /* .about__info--wrap {
-        width: 80%;
-        margin-bottom: 1rem;
-    } */
-    /* .about__info--para {
-        margin: 1rem 0;
-        text-align: center;
-    } */
 
-/* ---------- Skills ---------- */
+/* ---------- about ---------- */
+  .about__frame {
+        width: 80vw;
+        height: 80vh;
 
-/* ---------- Qualification ----------*/
-    .qualification__item {
-        width: 80%;
     }
-
     /* ---------- graphic ---------- */
     .works__content {
+        background: red;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .works__item {
         margin-right: 2%;

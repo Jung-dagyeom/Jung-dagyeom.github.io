@@ -36,6 +36,18 @@ $(function(){
     //     $(this).siblings('.skill__data').stop().slideToggle();
     // })
 
+    var $skillsItem = $('.skills__item');
+    var $skillsPercentage = $('.skills__percentage');
+
+    $skillsPercentage.hide();
+    $skillsItem.click(function(){
+
+        $(this).find('.skills__stack').toggle();
+        $(this).find('.skills__percentage').toggle();
+
+    })
+
+
     /* ================= qualifictaion ================= */
     var $qualificationTab = $('.qualification__tab');
     var $qualificationContent = $('.qualification__content');
@@ -53,8 +65,11 @@ $(function(){
     /* ---------- graphic works ---------- */
     $('.works__item-button').click(function(e){
             e.preventDefault();
-            $(this).siblings('.works__modal').show();
+            var src = $(this).attr('data-src') ;
+            $('.works__modal .modal__detail').attr('src', src)
+            $('.works__modal').show();
     })
+
     $('.works__modal').click(function(e){
         if(e.target === e.currentTarget){
             $(this).hide();
