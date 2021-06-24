@@ -19,9 +19,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 <!-- slick.js -->
-<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 <script src="./js/slick.js"></script>
-
 <script src="./js/script.js"></script>
 <title>정다겸 포트폴리오</title>
 </head>
@@ -30,7 +28,7 @@
     <header class="header" id="header">
         <div class="header-inner flex">
             <a href="./index.html" id="logo">
-                <img class="logo__img" src="./image/logo.png" alt="로고 이미지">
+                <img class="logo__img" src="./image/logo/logo.png" alt="로고 이미지">
             </a>
             <div class="nav__container">
                 <ul class="nav__menu flex">
@@ -94,6 +92,9 @@
                     <h2 class="section__subtitle">My introduction</h2>
                 </div>
                 <div class="about__info--wrap">
+                    <div class="about__info--item">
+                        <img class="profile__img" src="./image/profile-img.jpg" alt="프로필 이미지">
+                    </div>
                     <div class="about__info--item">
                         <div class="info__title">
                             <h3>Profile</h3>
@@ -205,46 +206,46 @@
                 <div class="skills__item--inner">
                     <div class="content second">
                         <h1 class="skills__stack">CSS3</h1>
-                        <h1 class="skills__percentage">97%</h1>
+                        <h1 class="skills__percentage">85%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content third">
-                        <h1 class="skills__stack">blanc</h1>
-                        <h1 class="skills__percentage">97%</h1>
+                        <h1 class="skills__stack">javascript</h1>
+                        <h1 class="skills__percentage">30%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content fourth">
-                        <h1 class="skills__stack">blanc</h1>
-                        <h1 class="skills__percentage">97%</h1>
+                        <h1 class="skills__stack">jQuery</h1>
+                        <h1 class="skills__percentage">50%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content fifth">
-                        <h1 class="skills__stack">blanc</h1>
-                        <h1 class="skills__percentage">97%</h1>
+                        <h1 class="skills__stack">Photoshop</h1>
+                        <h1 class="skills__percentage">90%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content sixth">
-                        <h1 class="skills__stack">blanc</h1>
-                        <h1 class="skills__percentage">97%</h1>
+                        <h1 class="skills__stack">Illustrator</h1>
+                        <h1 class="skills__percentage">90%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content seventh">
-                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__stack">PowerPoint</h1>
                         <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
@@ -311,6 +312,49 @@
                     </div>
                 </div>
             </ul>
+            <h2 class="section__subtitle">Design works gallery</h2>
+            <div class="gallery">
+                <img class="gallery-light--img" src="./image/gallery-img.png" alt="조명 이미지">
+                <ul class="l_row">
+                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_6_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/poster-img_1.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/poster-img_2.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/poster-img_3.jpg" alt="">
+                        </div>
+                    </li>
+                    <li class="l_col l_col_3_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/banner-img_1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="l_col l_col_12_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/banner-img_1.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li class="l_col l_col_12_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/banner-img_2.png" alt="">
+                        </div>
+                    </li>
+                    <li class="l_col l_col_12_12 l_col_tablet_6_12 l_col_mobile_3_12">
+                        <div class="img__wrap">
+                            <img src="./image/gallery/poster-img_3.jpg" alt="">
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
             <h2 class="section__subtitle">Web Design</h2>
             <div class="custom__slider">
                 <div>
@@ -396,7 +440,7 @@
         <div class="contact__container">
             <div class="contact__desc--wrap">
                 <div class="contact__img">
-                    <img src="./image/contact-img.png" alt="">
+                    <img src="./image/contact/contact-img.png" alt="">
                 </div>
                 <div class="contact__desc">
                     <p class="contact__info--para">dagyeoms1004@gmail.com</p>
@@ -405,7 +449,7 @@
                     <a href="https://github.com/Jung-dagyeom" title="github 사이트 이동">
                         <i class="uil uil-github"></i><br>Github
                     </a>
-                    <a href="mailto:dagyeoms1004@gmail.com&cc=dagyeoms1004@gmail.com&subject=포트폴리오%20관련해서%20연락드립니다" target="_top">
+                    <a href="mailto:dagyeoms1004@gmail.com" target="_top">
                         <i class="uil uil-envelope"></i><br>메일보내기
                     </a>
                     <a download="웹퍼블리셔_이력서_박한성.pdf" href="pdf/웹퍼블리셔_이력서_박한성.pdf" class="about__download">
@@ -422,7 +466,7 @@
     <!-- ====================================== Footer ====================================== -->
     <footer class="footer inner" id="footer">
         <div class="footer__logo">
-            <img class="footer__logo--img" src="./image/logo.png" alt="로고 이미지">
+            <img class="footer__logo--img" src="./image/logo/logo.png" alt="로고 이미지">
         </div>
         <p class="footer__copy">&copy; 2021. JUNGDAGYEOM All right reserved.</p>
     </footer>

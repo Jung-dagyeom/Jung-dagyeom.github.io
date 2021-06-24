@@ -1,6 +1,16 @@
 'use strict';
 
 $(function(){
+     /* ================= 안내 모달 start ===================== */
+     $('.notice-modal__close').click(function(){
+        $('#notice').hide();
+    })
+    $('#notice').click(function(e){
+        if(e.target === e.currentTarget){
+            $(this).hide();
+        }
+    })
+
     /* ================= change mode ===================== */
     $('#buttonDark').click(function(){
         $(this).hide();
@@ -41,10 +51,8 @@ $(function(){
 
     $skillsPercentage.hide();
     $skillsItem.click(function(){
-
         $(this).find('.skills__stack').toggle();
         $(this).find('.skills__percentage').toggle();
-
     })
 
 

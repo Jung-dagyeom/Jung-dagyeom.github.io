@@ -9,7 +9,7 @@
         background-color: var(--body-color);
         font-family: var(--body-font);
     }
-    ul {
+    li {
         list-style: none;
     }
     a {

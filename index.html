@@ -3,25 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="Build" content="2020.06.22"><!-- 제작 년월일 -->
+<meta name="description" content="웹디자이너 정다겸의 웹사이트입니다"><!-- 설명 -->
+<meta name="keywords" content="웹디자이너, 웹포트폴리오, 정다겸, 대구,"/><!-- 키워드 -->
+<meta name="author" content="정다겸"><!-- 작성자 -->
+<meta name="robots" content="index"> <!-- 웹 페이지 검색 기본 설정 -->
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/responsive.css">
+<!-- icons : unicons, xeicon -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!-- js -->
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- slick.js -->
+<script src="./js/slick.js"></script>
+<script src="./js/script.js"></script>
 <title>정다겸 포트폴리오</title>
 </head>
 <body>
+     <!-- ======================== 클론 코딩 안내 ======================== -->
+     <!-- <div class="notice" id="notice">
+        <div class="modal">
+            <i class="uil uil-times notice-modal__close"></i>
+            <p>
+                <p>* 해당 사이트는 학습용으로 제작된 사이트입니다 <br>
+                저작물의 저작권은 원작자에게 있습니다 </p>
+                <h4 class="notice__title">
+                    1) 사용한 언어와 라이브러리 등
+                </h4>
+                <img src="./img/html5-icon.png" alt="html5 로고" class="logo__html5">
+                <img src="./img/css3_logo.png" alt="css3 로고" class="logo__css3">
+                <img src="./img/js-logo.png" alt="js 로고" class="logo__js">
+                <img src="./img/jquery_logo.png" alt="jquery 로고" class="logo__jquery">
+                <img src="./img/github_logo.png" alt="github 로고" class="logo__github">
+                <h4 class="notice__title">
+                    2) 웹표준, 웹접근성, 웹호환성을 고려하여 제작하였습니다
+                </h4>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="//jigsaw.w3.org/css-validator/images/vcss"
+                        alt="올바른 CSS입니다!" />
+                </a>
+            </p>
+        </div>
+    </div> -->
     <div class="intro__wrap">
-        <div class="intro__inner">
+        <div class="intro__container">
             <h2 class="intro__title">Dagyeom's Portfolio</h2>
-            <div class="intro__container">
-                <img class="intro__bg" src="./image/intro/intro-bg.png" alt="">
-                <div class="intro__contents">
-                    <a href="./main.html" id="intro__image">
-                        <img src="./image/intro/intro_visual01.png" alt="">
-                        <img src="./image/intro/intro_visual02.png" alt="">
-                    </a>
-                </div>
+            <img class="intro__bg" src="./image/intro/intro-bg_1.png" alt="">
+            <div class="intro__contents">
+                <a href="./main.html" id="intro__image">
+                    <img src="./image/intro/intro_visual_1.png" alt="">
+                    <img src="./image/intro/intro_visual_2.png" alt="">
+                </a>
             </div>
-            <p class="copyright">&copy; 2021. JUNGDAGYEOM All right reserved.</p>
         </div>
     </div>
+    <p class="copyright">&copy; 2021. JUNGDAGYEOM All right reserved.</p>
 </body>
 </html>
