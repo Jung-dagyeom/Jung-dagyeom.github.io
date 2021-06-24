@@ -363,7 +363,6 @@
     }
     .about .section__title--wrap {
         padding-top: 3rem;
-        margin-bottom: var(--mb-2);
     }
     .about__info--wrap {
         display: flex;
@@ -735,6 +734,7 @@
         color: var(--gray-color);
     }
     .contact__img {
+        display: inline-block;
         margin-top: 1rem;
         animation: contact 2s linear infinite alternate;
     }
@@ -742,17 +742,12 @@
         width: 100px;
     }
     .contact__desc--wrap {
-        display: flex;
-        justify-content: center;
         text-align: center;
         border-radius: 80px;
         box-shadow: 5px 5px 5px var(--blue-color);
         transition: .5s;
     }
     .contact__desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         padding: 1.5rem 1.5rem;
     }
     .content__item {
