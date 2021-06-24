@@ -6,14 +6,22 @@
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/responsive.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+<!-- slick.css -->
+<!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+<link rel="stylesheet" href="./css/slick.css">
+
 <!-- icons : unicons, xeicon -->
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!-- js -->
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- slick.js -->
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+<script src="./js/slick.js"></script>
+
 <script src="./js/script.js"></script>
 <title>정다겸 포트폴리오</title>
 </head>
@@ -68,7 +76,7 @@
     <section class="home inner" id="home">
             <div class="home__intro">
                 <div class="home__desc">
-                    <h1 class="home__title">Portfolio</h1>
+                    <h1 class="home__title">PORTFOLIO</h1>
                     <h2 class="home__subtitle">my special work</h2>   
                 </div>
                 <div class="animation__line left"></div>
@@ -148,6 +156,31 @@
                                 ACA Photoshop CS6
                             </li>
                         </ul>
+                        <ul>
+                            <li>
+                                <span>2014. 09. 12</span>
+                            </li>
+                            <li>
+                                MOS Office Access® 2007
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>2013. 06. 22</span>
+                            </li>
+                            <li>
+                                MOS Office PowerPoint® 2007
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span>2013. 05. 25</span>
+                            </li>
+                            <li>
+                                MOS Office Excel® 2007 Expert
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -163,49 +196,56 @@
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content first">
-                        <h1>HTML5</h1>
+                        <h1 class="skills__stack">HTML5</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content second">
-                        <h1>CSS3</h1>
+                        <h1 class="skills__stack">CSS3</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content third">
-                        <h1>javaScript & jQuery</h1>
+                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content fourth">
-                        <h1>Hex1</h1>
+                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content fifth">
-                        <h1>Hex1</h1>
+                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content sixth">
-                        <h1>Hex1</h1>
+                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
             <div class="skills__item">
                 <div class="skills__item--inner">
                     <div class="content seventh">
-                        <h1>Hex1</h1>
+                        <h1 class="skills__stack">blanc</h1>
+                        <h1 class="skills__percentage">97%</h1>
                     </div>
                 </div>
             </div>
@@ -220,77 +260,56 @@
         <div class="portfolio__container">
             <ul class="works__content">
                 <li class="works__item">
-                    <h1>BRANDING</h1>
-                    <h2>대교농산</h2>
-                    <a href="#" class="works__item-button">
+                    <img src="./image/graphic-design/web_page-img.jpg" alt="">
+                    <h1>Web<br>Design </h1>
+                    <h2>오늘의 집</h2>
+                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
                         More
                     </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
-                    </div>
+                </li>
+                <li class="works__item">
+                    <img src="./image/graphic-design/branding-img.jpg" alt="">
+                    <h1>BRANDING</h1>
+                    <h2>대교농산</h2>
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/web_page-img.jpg">
+                        More
+                    </a>
+                </li>
+                <li class="works__item">
+                    <h1>App<br>Design </h1>
+                    <h2>캐시워크</h2>
+                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
+                        More
+                    </a>
                 </li>
                 <li class="works__item">
                     <h1>POSTER</h1>
-                    <h2>봄꽃 축제</h2>
-                    <a href="#" class="works__item-button">
+                    <h2>축제 포스터<br><span>봄꽃 축제</span></h2>
+
+                    <img src="./image/graphic-design/poster-img-1.jpg" alt="">
+                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
                         More
                     </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
-                    </div>
                 </li>
                 <li class="works__item">
-                    <h1>App<br>Re-Design </h1>
-                    <h2>캐시워크</h2>
-                    <a href="#" class="works__item-button">
-                        More
-                    </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
-                    </div>
-                </li>
-                <li class="works__item">
-                    <h1>Web Page<br>Re-Design </h1>
-                    <h2>오늘의 집</h2>
-                    <a href="#" class="works__item-button">
-                        More
-                    </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
-                    </div>
-                </li>
-                <li class="works__item">
-                    <h1>Mobile<br>Re-Design </h1>
+                    <h1>Mobile<br>Design </h1>
                     <h2>스타일 윅스</h2>
-                    <a href="#" class="works__item-button">
+                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
                         More
                     </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
-                    </div>
                 </li>
                 <li class="works__item">
                     <h1>banner<br>Design </h1>
                     <h2>각종 배너</h2>
-                    <a href="#" class="works__item-button">
+                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
                         More
                     </a>
-                    <div class="works__modal">
-                        <div class="works__modal-content">
-                            <img src="./Artboard 1.jpg" alt="" class="modal__detail">
-                        </div>
+                </li> 
+                 <div class="works__modal">
+                    <div class="works__modal-content">
+                        <img src="" alt="" class="modal__detail">
                     </div>
-                </li>
+                </div>
             </ul>
             <h2 class="section__subtitle">Web Design</h2>
             <div class="custom__slider">
@@ -304,22 +323,22 @@
                                     View Code
                                     <i class="uil uil-arrow-right"></i>
                                 </a>
-                                <a href="https://www.github.com" class="button slick__button" target="_blank">
+                                <a href="https://jung-dagyeom.github.io/godiva-project/" class="button slick__button" target="_blank">
                                     View Site
                                     <i class="uil uil-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                         <div class="slider__img">
-                            <img src="./web-page.png" alt="">
+                            <img src="./image/slider/web_page-1.png" alt="">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="slider__content">
                         <div class="slider__desc">
-                            <h1>클론 코딩 사이트</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <h1>macaron M</h1>
+                            <p></p>
                             <div class="slider__buttons">
                                 <a href="https://www.github.com" class="button slick__button" target="_blank">
                                     View Code
@@ -332,7 +351,7 @@
                             </div>
                         </div>
                         <div class="slider__img">
-                            <img src="./web-page.png" alt="">
+                            <img src="./image/slider/web_page-2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -383,14 +402,14 @@
                     <p class="contact__info--para">dagyeoms1004@gmail.com</p>
                 </div>
                 <div class="content__item">
-                    <a href="#" title="github 사이트 이동">
-                        <i class="uil uil-github"></i> Github
+                    <a href="https://github.com/Jung-dagyeom" title="github 사이트 이동">
+                        <i class="uil uil-github"></i><br>Github
                     </a>
                     <a href="mailto:dagyeoms1004@gmail.com&cc=dagyeoms1004@gmail.com&subject=포트폴리오%20관련해서%20연락드립니다" target="_top">
-                        <i class="uil uil-envelope"></i> 메일보내기
+                        <i class="uil uil-envelope"></i><br>메일보내기
                     </a>
                     <a download="웹퍼블리셔_이력서_박한성.pdf" href="pdf/웹퍼블리셔_이력서_박한성.pdf" class="about__download">
-                        <i class="uil uil-file-download-alt"></i> 이력서 다운로드
+                        <i class="uil uil-file-download-alt"></i><br> 이력서
                     </a>
                 </div>
             </div>
