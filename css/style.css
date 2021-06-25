@@ -8,7 +8,7 @@
         --primary-color: hsl(var(--hue-color), 69%, 46%);
         --white-color: #fff;
         --black-color: hsl(var(--hue-color), 8%, 15%);
-        --body-color: hsl(var(--hue-color), 0, 98%);
+        --body-color: hsl(var(--hue-color), 2%, 98%);
         /* ----- point colors ----- */ 
         --pink-color: #f8aca1;
         --yellow-color: #f8e273;
@@ -22,7 +22,7 @@
         --body-font: 'Poppins', sans-serif;
         --point-font:'MapoFlowerIsland', 'Noto Sans KR', sans-serif;
         --big-font-size: 3rem;
-        --small-font-size: .9rem;
+        --small-font-size: .8rem;
         --normal-font-size: 1.5rem;
         --mediem-font-size: 2rem;
         --h1-font-size: 2.25rem;
@@ -118,55 +118,23 @@
         width: 8.33333333%;
     }
 
-    /* ========================= intro ========================= */
-    .intro__title {
-        display: none;
-    }
-    .intro__container {
-        position: relative;
-        height: 100vh;
-        background: #303a4c;
-    }
-    .intro__bg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100vw;
-    }
-    .intro__contents {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 25vw;
+    /* ========================= 웹표준, 웹 접근성skip ========================= */
+    #skip {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        background: #000;
+        color: var(--primary-color);
+        z-index: 9999;
         text-align: center;
     }
-    #intro__image {
-        display: inline-block;
-        width: 50%;
+    #skip:focus
+    {
+        transform: translateY(0);
     }
-    #intro__image img {
-        filter: drop-shadow(10px 30px 10px #999);
-    }
-    #intro__image img:last-child {
-        display: none;
-    }
-    #intro__image:hover img:first-child {
-        display: none;
-    }
-    #intro__image:hover img:last-child {
-        display: block;
-    }
-    .copyright {
-        position: absolute;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        max-width: 568px;
-        font-weight: bold;
-        display: none;
-    }
+    
     /* ========================= 웹표준, 웹 접근성 ========================= */
     #notice {
         position: fixed;
@@ -216,6 +184,55 @@
     .logo__github {
         width: 60px;
     }
+        /* ========================= intro ========================= */
+        .intro__title {
+            display: none;
+        }
+        .intro__container {
+            position: relative;
+            height: 100vh;
+            background: #303a4c;
+        }
+        .intro__bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw;
+        }
+        .intro__contents {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25vw;
+            text-align: center;
+        }
+        #intro__image {
+            display: inline-block;
+            width: 50%;
+        }
+        #intro__image img {
+            filter: drop-shadow(10px 30px 10px #999);
+        }
+        #intro__image img:last-child {
+            display: none;
+        }
+        #intro__image:hover img:first-child {
+            display: none;
+        }
+        #intro__image:hover img:last-child {
+            display: block;
+        }
+        .copyright {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 568px;
+            font-weight: bold;
+            display: none;
+        }
     /* ========================= header ========================= */
     .header {
         position: fixed;
@@ -324,7 +341,7 @@
     .animation__line.bottom {
         position: absolute;
         width: 17px;
-        height: 36vw;
+        height: 66vh;
     }
     .left {
         top: -17px;
@@ -460,9 +477,9 @@
         font-weight: 600;
     }
     .about__info--item .profile__img {
-        width: 165px;
-        height: 230px;
-        border-radius: 80px;
+        width: 170px;
+        height: 200px;
+        border-radius: 110px;
         border: 5px inset var(--purple-color);
     }
     .about__info--item ul li{
@@ -541,12 +558,9 @@
         align-items: center;
         overflow: hidden;
         transform: skewY(-30deg) rotate3d(0,0,1,60deg);
-        background: #02b4cd80;
-        box-shadow: 5px 0 30px var(--gray-color-light);
     }
     .content h1 {
         text-align: center;
-        font-style: 3vw;
         color: var(--white-color);
     }
     .first {
@@ -659,7 +673,7 @@
     }
     .works__item:hover img {
         display: inline-block;
-        filter: brightness(60%); 
+        filter: brightness(75%); 
     }
     .works__item h1 {
         font-size: var(--normal-font-size);
@@ -678,9 +692,10 @@
         display: inline-block;
         font-size: var(--medium-font-size);
         color: var(--white-color);
+        margin-top: 4rem;
     }
     .works__item-button {
-        display: none; 
+        display: none;
         width: 45px;
         height: 45px;
         margin-top: 1.5rem;
@@ -692,7 +707,7 @@
     }
     .works__item:hover .works__item-button {
         display: inline-block;
-        margin-top: 3rem;
+        margin-top: 2rem;
         color: var(--white-color);
     }
     .works__modal {
@@ -745,7 +760,7 @@
     .img__wrap {
         height: 100%;
         overflow: hidden;
-        border: 5px outset var(--white-color);
+        box-shadow: 1px 1px 5px var(--gray-color-light);
 
     }
     .img__wrap img {

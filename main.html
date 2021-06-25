@@ -11,13 +11,20 @@
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
 <link rel="stylesheet" href="./css/slick.css">
 
-<!-- icons : unicons, xeicon -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+<!-- icons : favicon, unicons, xeicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <!-- js -->
 <!-- jQuery CDN -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+<!-- scroll magic이 먼저 선언 -->
+<script src="./js/plugin/ScrollMagic.min.js"></script>
+<script src="./js/plugin/debug.addIndicators.min.js"></script>
+<!-- gsap.js -->
+<script src="./js/plugin/gsap.min.js"></script>
+<!-- gsap, scroll magic 연동 시켜줌 -->
+<script src="./js/plugin/animation.gsap.min.js"></script>
 <!-- slick.js -->
 <script src="./js/slick.js"></script>
 <script src="./js/script.js"></script>
@@ -93,7 +100,7 @@
                 </div>
                 <div class="about__info--wrap">
                     <div class="about__info--item">
-                        <img class="profile__img" src="./image/profile-img.jpg" alt="프로필 이미지">
+                        <img class="profile__img" src="./image/profile-img-1.jpg" alt="프로필 이미지">
                     </div>
                     <div class="about__info--item">
                         <div class="info__title">
@@ -138,7 +145,7 @@
                                 <span>2021. 05. 14</span>
                             </li>
                             <li>
-                                GTQ 일러스트 1급
+                                GTQ 그래픽기술자격 일러스트 1급
                             </li>
                         </ul>
                         <ul>
@@ -146,7 +153,7 @@
                                 <span>2021. 04. 16</span>
                             </li>
                             <li>
-                                GTQ 그래픽기술자격 1급
+                                GTQ 그래픽기술자격 포토샵 1급
                             </li>
                         </ul>
                         <ul>
@@ -261,10 +268,10 @@
         <div class="portfolio__container">
             <ul class="works__content">
                 <li class="works__item">
-                    <img src="./image/graphic-design/web_page-img.jpg" alt="">
+                    <img src="./image/graphic-design/web-img.jpg" alt="">
                     <h1>Web<br>Design </h1>
                     <h2>오늘의 집</h2>
-                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/web-design_detail.jpg">
                         More
                     </a>
                 </li>
@@ -277,25 +284,26 @@
                     </a>
                 </li>
                 <li class="works__item">
+                    <img src="./image/graphic-design/app-img.jpg" alt="">
                     <h1>App<br>Design </h1>
                     <h2>캐시워크</h2>
-                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/app-design_detail.jpg">
                         More
                     </a>
                 </li>
                 <li class="works__item">
+                    <img src="./image/graphic-design/poster-img.jpg" alt="">
                     <h1>POSTER</h1>
-                    <h2>축제 포스터<br><span>봄꽃 축제</span></h2>
-
-                    <img src="./image/graphic-design/poster-img-1.jpg" alt="">
-                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
+                    <h2>축제 포스터</h2>
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/poster-design.jpg">
                         More
                     </a>
                 </li>
                 <li class="works__item">
+                    <img src="./image/graphic-design/mobile-img.jpg" alt="">
                     <h1>Mobile<br>Design </h1>
                     <h2>스타일 윅스</h2>
-                    <a href="#" class="works__item-button" data-src="./image/Artboard_1.jpg">
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/mobile-design_detail.jpg">
                         More
                     </a>
                 </li>
@@ -355,7 +363,7 @@
                     
                 </ul>
             </div>
-            <h2 class="section__subtitle">Web Design</h2>
+            <h2 class="section__subtitle">Web</h2>
             <div class="custom__slider">
                 <div>
                     <div class="slider__content">
