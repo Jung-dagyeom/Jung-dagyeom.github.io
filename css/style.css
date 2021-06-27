@@ -509,17 +509,6 @@
     .skills {
         position: relative;
     }
-    .skills::before {
-        content: '';
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        background: var(--yellow-color);
-        top: 20%;
-        left: 20%;
-        border-radius: 10px 80px / 80px 10px;
-        /* animation: point 2s infinite linear alternate; */
-    }
     .skills.inner {
         padding-top: 8rem;
     }
@@ -794,9 +783,9 @@
     }
     .l_col {
         box-sizing: border-box;
-        /* width: 33.3333%; */
         padding: 0 10px;
         margin-bottom: 20px;
+        cursor: pointer;
     }
     .img__wrap img {
         transition: .5s;

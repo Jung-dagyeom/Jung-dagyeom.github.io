@@ -177,6 +177,10 @@
 .content h1 {
     font-size: var(--normar-font-size);
 }
+.skills .section__title::before {
+    width: 85px;
+    height: 15px;
+}
 
 /* ---------- portfolio graphic ---------- */
     .works__item h1 {
