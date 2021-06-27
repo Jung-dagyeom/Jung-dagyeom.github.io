@@ -41,11 +41,6 @@ $(function(){
         $('.nav__container').toggleClass('visible');
     })
     /* ================= skill tabs ================= */
-    // $('.skills__header').click(function(){
-    //     $(this).children('.skill__icon--arrow').toggleClass('active');
-    //     $(this).siblings('.skill__data').stop().slideToggle();
-    // })
-
     var $skillsItem = $('.skills__item');
     var $skillsPercentage = $('.skills__percentage');
 
@@ -54,21 +49,6 @@ $(function(){
         $(this).find('.skills__stack').toggle();
         $(this).find('.skills__percentage').toggle();
     })
-
-
-    /* ================= qualifictaion ================= */
-    var $qualificationTab = $('.qualification__tab');
-    var $qualificationContent = $('.qualification__content');
-    $qualificationContent.eq(1).hide();
-    $qualificationTab.click(function(e){
-        e.preventDefault();
-        $(this).siblings().removeClass('active');
-        $(this).addClass('active');
-        var idx = $(this).index();
-        $qualificationContent.hide();
-        $qualificationContent.eq(idx).show();
-    })
-
     /* ================= portfolio ================= */
     /* ---------- graphic works ---------- */
     $('.works__item-button').click(function(e){
@@ -86,8 +66,11 @@ $(function(){
     /* ---------- web works ---------- */
     $('.custom__slider').slick({
         dots:true,
-        /* autoplay: true,
-        autoplaySpeed: 2000, */
+        fade: true,
+        infinite: true,
+        // cssEase: 'linear',
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
 
     /* ================= scroll up ================= */
