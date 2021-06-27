@@ -687,7 +687,6 @@
     .works__item:nth-child(5):hover .works__item-button {
         background: var(--purple-color);
     }
-
     .works__item:last-child {
         margin-right: 0;
     }
