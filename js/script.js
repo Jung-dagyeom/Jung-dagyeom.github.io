@@ -1,16 +1,6 @@
 'use strict';
 
 $(function(){
-     /* ================= 안내 모달 start ===================== */
-     $('.notice-modal__close').click(function(){
-        $('#notice').hide();
-    })
-    $('#notice').click(function(e){
-        if(e.target === e.currentTarget){
-            $(this).hide();
-        }
-    })
-
     /* ================= change mode ===================== */
     $('#buttonDark').click(function(){
         $(this).hide();
@@ -22,7 +12,6 @@ $(function(){
         $('#buttonDark').show();
         $(this).hide();
     })
-
     /* ================= navbar ===================== */
     var $navItem = $('.nav__item');
     $navItem.click(function(e){
@@ -35,7 +24,6 @@ $(function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
     })
-
     /* nav toggle */
     $('#navToggle, .nav__close').click(function(){
         $('.nav__container').toggleClass('visible');
@@ -72,7 +60,24 @@ $(function(){
         // autoplay: true,
         // autoplaySpeed: 2000,
     });
+    /* ---------- gallery ---------- */
+      $(function(){
+          var $moreBtn = $('#moreButton');
+          var $moreItem = $('#moreItem');
 
+          $moreBtn.click(function(event){
+            event.preventDefault();
+            // $moreItem 숨겨진 상태면
+            if( $moreItem.is(':visible') ){
+                $moreItem.slideUp();
+                $moreBtn.text('more +');
+                // $moreItem 펼쳐진 상태면
+            }else{
+                $moreItem.slideDown();
+                $moreBtn.text('close -');
+            }
+          })
+      });
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;
     var $scrollUp = $('.scrollup');
@@ -89,4 +94,3 @@ $(function(){
         $('html, body').animate({scrollTop: 0});
     })
 })
-

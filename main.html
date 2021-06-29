@@ -6,10 +6,10 @@
 <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" href="./css/responsive.css">
-<!-- slick.css -->
 <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+<!-- slick.css -->
 <link rel="stylesheet" href="./css/slick.css">
-<!-- icons : favicon, unicons, xeicon -->
+<!-- icons : favicon, xeicon, unicons -->
 <link rel="icon" type="image/png" sizes="32x32" href="./image/favicon-32x32.png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -26,7 +26,7 @@
 <!-- slick.js -->
 <script src="./js/slick.js"></script>
 <script src="./js/script.js"></script>
-<title>정다겸 포트폴리오</title>
+<title>메인 - 정다겸 포트폴리오</title>
 </head>
 <body>
     <!-- ========================= header ========================= -->
@@ -60,6 +60,12 @@
                         </a>
                     </li>
                     <li class="nav__item">
+                        <a href="#" data-link="#gallery" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>
+                            GALLERY
+                        </a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#" data-link="#contact" class="nav__link">
                             <i class="uil uil-briefcase-alt nav__icon"></i>
                             CONTACT
@@ -71,22 +77,22 @@
             <div class="nav__btns flex">
                 <i class="uil uil-sun change-theme" id="buttonLight"></i>
                 <i class="uil uil-moon change-theme" id="buttonDark"></i>
-                <i class="uil uil-apps" id="navToggle"></i>
+                <i class="uil uil-ellipsis-h" id="navToggle"></i>
             </div>
         </div>
     </header>
-    <!-- ========================= main ========================= -->
+    <!-- ========================= Home ========================= -->
     <section class="home inner flex" id="home">
-            <div class="home__intro">
-                <div class="home__desc">
-                    <h1 class="home__title">PORTFOLIO</h1>
-                    <h2 class="home__subtitle">my special work</h2>   
-                </div>
-                <div class="animation__line left"></div>
-                <div class="animation__line right"></div>
-                <div class="animation__line top"></div>
-                <div class="animation__line bottom"></div>
+        <div class="home__intro">
+            <div class="home__desc">
+                <h1 class="home__title">PORTFOLIO</h1>
+                <h2 class="home__subtitle">my special work</h2>   
             </div>
+            <div class="animation__line left"></div>
+            <div class="animation__line right"></div>
+            <div class="animation__line top"></div>
+            <div class="animation__line bottom"></div>
+        </div>
     </section>
     <!-- ========================= about ========================= -->
     <section class="about inner" id="about">
@@ -261,12 +267,12 @@
     <section class="portfolio inner" id="portfolio">
         <div class="section__title--wrap">
             <h1 class="section__title">Portfolio</h1>
-            <h2 class="section__subtitle">Graphic Design</h2>
+            <h2 class="section__subtitle">Graphic Design & Web Publising</h2>
         </div>
         <div class="portfolio__container">
             <ul class="works__content flex">
                 <li class="works__item">
-                    <img src="./image/graphic-design/web-img.jpg" alt="">
+                    <img src="./image/graphic-design/web-img.jpg" alt="웹페이지 오늘의집 이미지">
                     <h1>Web<br>Design </h1>
                     <h2>오늘의 집</h2>
                     <a href="#" class="works__item-button" data-src="./image/graphic-design/web-design_detail.jpg">
@@ -274,15 +280,15 @@
                     </a>
                 </li>
                 <li class="works__item">
-                    <img src="./image/graphic-design/branding-img.jpg" alt="">
+                    <img src="./image/graphic-design/branding-img.jpg" alt="대교농산 로고디자인 이미지">
                     <h1>BRANDING</h1>
                     <h2>대교농산</h2>
-                    <a href="#" class="works__item-button" data-src="./image/graphic-design/web_page-img.jpg">
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/brending-design_detail.jpg">
                         More
                     </a>
                 </li>
                 <li class="works__item">
-                    <img src="./image/graphic-design/app-img.jpg" alt="">
+                    <img src="./image/graphic-design/app-img.jpg" alt="앱디자인 캐시워크 이미지">
                     <h1>App<br>Design </h1>
                     <h2>캐시워크</h2>
                     <a href="#" class="works__item-button" data-src="./image/graphic-design/app-design_detail.jpg">
@@ -290,15 +296,15 @@
                     </a>
                 </li>
                 <li class="works__item">
-                    <img src="./image/graphic-design/poster-img.jpg" alt="">
+                    <img src="./image/graphic-design/poster-img.jpg" alt="축제포스터 디자인 이미지">
                     <h1>POSTER</h1>
                     <h2>축제 포스터</h2>
-                    <a href="#" class="works__item-button" data-src="./image/graphic-design/poster-design.jpg">
+                    <a href="#" class="works__item-button" data-src="./image/graphic-design/poster-design_detail.jpg">
                         More
                     </a>
                 </li>
                 <li class="works__item">
-                    <img src="./image/graphic-design/mobile-img.jpg" alt="">
+                    <img src="./image/graphic-design/mobile-img.jpg" alt="모바일 스타일윅스 디자인 이미지">
                     <h1>Mobile<br>Design </h1>
                     <h2>스타일 윅스</h2>
                     <a href="#" class="works__item-button" data-src="./image/graphic-design/mobile-design_detail.jpg">
@@ -311,50 +317,6 @@
                     </div>
                 </div>
             </ul>
-            <h2 class="section__subtitle">Design works gallery</h2>
-            <div class="gallery">
-                <img class="gallery-light--img" src="./image/gallery/light-img.png" alt="조명 이미지">
-                <ul class="l_row">
-                    <li class="l_col l_col_12_12 l_col_tablet_12_12 l_col_mobile_12_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/poster-design_1.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_7_12 l_col_tablet_6_12 l_col_mobile_6_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/poster-design_2.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_5_12 l_col_tablet_6_12 l_col_mobile_6_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/poster-design_3.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/banner-design_1.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/banner-design_2.jpg" alt="">
-                        </div>
-                    </li>
-                    
-                    <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/banner-design_3.jpg" alt="">
-                        </div>
-                    </li>
-                    <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
-                        <div class="img__wrap">
-                            <img src="./image/gallery/banner-design_4.jpg" alt="">
-                        </div>
-                    </li>
-                    
-                </ul>
-            </div>
-            <h2 class="section__subtitle">Web</h2>
             <div class="custom__slider">
                 <div>
                     <div class="slider__content">
@@ -373,14 +335,14 @@
                             </div>
                         </div>
                         <div class="slider__img">
-                            <img src="./image/slider/web_page-1.png" alt="">
+                            <img src="./image/slider/web_page-1.png" alt="고디바 홈페이지 이미지">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="slider__content">
                         <div class="slider__desc">
-                            <h1>macaron M</h1>
+                            <h1>macaron M -</h1>
                             <p></p>
                             <div class="slider__buttons">
                                 <a href="https://www.github.com" class="button slick__button" target="_blank">
@@ -394,15 +356,15 @@
                             </div>
                         </div>
                         <div class="slider__img">
-                            <img src="./image/slider/web_page-2.png" alt="">
+                            <img src="./image/slider/web_page-2.png" alt="마카롱택시 홈페이지 이미지">
                         </div>
                     </div>
                 </div>
                 <div>
                     <div class="slider__content">
                         <div class="slider__desc">
-                            <h1>클론 코딩 사이트</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <h1>web page -</h1>
+                            <p>준비중입니다</p>
                             <div class="slider__buttons">
                                 <a href="https://www.github.com" class="button slick__button" target="_blank">
                                     View Code
@@ -415,15 +377,89 @@
                             </div>
                         </div>
                         <div class="slider__img">
-                            <img src="./img/portfolio3.jpg" alt="">
+                            <img src="./img/portfolio3.jpg" alt="홈페이지 준비중 이미지">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="gallery inner" id="gallery">
+        <div class="section__title--wrap">
+            <h1 class="section__title">Design works gallery</h1>
+        </div>
+        <img class="gallery-light--img" src="./image/gallery/light-img.png" alt="조명 이미지">
+        <div class="gallery__container">
+            <ul class="l_row">
+                <li class="l_col l_col_12_12 l_col_tablet_12_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/poster-design_1.jpg" alt="축제포스터 목업 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_7_12 l_col_tablet_6_12 l_col_mobile_6_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/poster-design_2.jpg" alt="썸머포스터 목업 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_5_12 l_col_tablet_6_12 l_col_mobile_6_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/poster-design_3.jpg" alt="썸머포스터 세로 배너이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_1.jpg" alt="화장품 가로배너 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_2.jpg" alt="라코스테 가로배너 이미지">
+                    </div>
+                </li>
+                
+                <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_3.jpg" alt="커피 가로배너 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_4.jpg" alt="제이에스티나 가로배너 이미지">
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="gallery__item--more" id="moreItem">
+            <ul class="l_row">
+                <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_1.jpg" alt="화장품 가로배너 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_6_12 l_col_tablet_6_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_2.jpg" alt="라코스테 가로배너 이미지">
+                    </div>
+                </li>
+                
+                <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_3.jpg" alt="커피 가로배너 이미지">
+                    </div>
+                </li>
+                <li class="l_col l_col_6_12 l_col_tablet_12_12 l_col_mobile_12_12">
+                    <div class="img__wrap">
+                        <img src="./image/gallery/banner-design_4.jpg" alt="제이에스티나 가로배너 이미지">
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <a href="#" class="gallery__item-button" id="moreButton">more +</a>
+
+    </section>
     <!-- ========================= contact ========================= -->
-    <div class="contact inner" id="contact">
+    <section class="contact inner" id="contact">
         <div class="section__title--wrap">
             <h1 class="section__title">Contact Me</h1>
             <h2 class="section__subtitle">
@@ -434,12 +470,11 @@
                 <span style="color: #a1e4d1;">게</span> 
                 채울 수 있는 디자이너가 되겠습니다.
             </h2>
-            
         </div>
         <div class="contact__container">
             <div class="contact__desc--wrap">
                 <div class="contact__img">
-                    <img src="./image/contact/contact-img.png" alt="">
+                    <img src="./image/contact/contact-img.png" alt="전화기 이미지">
                 </div>
                 <div class="contact__desc">
                     <p class="contact__info--para">dagyeoms1004@gmail.com</p>
@@ -457,7 +492,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- ====================================== Scroll top ====================================== -->
     <a href="#" class="scrollup" id="scroll-up">
         <i class="uil uil-arrow-up scrollup__icon"></i>

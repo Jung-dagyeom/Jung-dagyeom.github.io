@@ -155,7 +155,7 @@
     .home__title {
         font-size: 3rem;
     }
-/* ----------- About ----------= */
+/* ---------- About ---------- */
     .about__frame {
         width: 85vw;
         height: 85vh;
@@ -173,32 +173,32 @@
     .about__info--item ul li {
         font-size: var(--normar-font-size);
     }
-/* ----------- skills ----------= */
-.content h1 {
-    font-size: var(--normar-font-size);
-}
-.skills .section__title::before {
-    width: 85px;
-    height: 15px;
-}
-
-/* ---------- portfolio graphic ---------- */
+/* ---------- skills  ---------- */
+    .skills {
+        height: 50vh; 
+    }
+    .content h1 {
+        font-size: var(--normar-font-size);
+    }
+    .skills .section__title:before {
+        width: 85px;
+        height: 15px;
+    }
+/*  ---------- portfolio graphic ---------- */
     .works__item h1 {
     font-size: var(--small-font-size);
     }
-
-/* ----------- footer ----------= */
+/* ---------- footer ---------- */
     .footer__logo {
         display: none;
     }
     .footer__copy {
-        padding-bottom: 2.5rem;
+        padding-bottom: 5rem;
     }
     .footer.inner {
        padding-top: 0;
     }
 }
-
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
 @media (max-width: 568px){
 /* ---------- grid ---------- */
@@ -238,13 +238,10 @@
     .l_col_mobile_1_12 {
         width: 8.33333333%;
     }
-/* ---------- home ---------- */    
-    #home {
-        flex-direction: column;
-    }
-    .home__img {
-        order: -1;
-        margin-bottom: 1rem;
+/* ---------- skills ---------- */
+    .skills:before {
+        bottom: 20%;
+        right: 10px;
     }
 /* ---------- portfolio graphic ---------- */
     .works__content {
@@ -253,7 +250,7 @@
     }
     .works__item {
         margin-right: 2%;
-        width: 47%;
+        width: 46.5%;
         flex: auto;
         margin-bottom: 1rem;
     }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<title>more button</title>
+
+<script>
+    
+    $(function(){
+        // more button을 눌렀을때 
+        let $designMoreBtn = $('#designMoreBtn'); /* let, const */
+        let $wrap = $('.wrap');
+        
+        $designMoreBtn.click(function(){
+            // 위에 작업물이 보여라/숨겨라
+            $wrap.slideToggle();
+        })
+    })
+</script>
+
+
+<style>
+    .wrap {
+        display: flex;
+        margin: 0 auto;
+        display: none;
+    }
+    .box {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        background: gold;
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+<button id="designMoreBtn">More</button>
+
+
+</body>
+</html>
