@@ -146,7 +146,6 @@
         position: absolute;
         top: 30%;
         left: 55%;
-        transform: translate(-50%);
         z-index: 1;
         animation: click .5s infinite alternate;
         width: 150px;

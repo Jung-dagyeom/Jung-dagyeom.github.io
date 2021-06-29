@@ -63,6 +63,11 @@
         font-size: 2.5rem;
         color: var(--white-color);
     }
+    .intro__ment--box {
+        top: 23%;
+        left: 65%;
+        width: 200px;
+    }
     .intro__bg {
         display: none;
     }
@@ -150,7 +155,6 @@
         cursor: pointer;
         font-size: 2rem;
     }
-
 /* ---------- Home ---------- */
     .home__title {
         font-size: 3rem;
@@ -175,7 +179,11 @@
     }
 /* ---------- skills  ---------- */
     .skills {
-        height: 50vh; 
+        height: 65vh; 
+    }
+    .skills:before {
+        bottom: 15%;
+        right: 15px;
     }
     .content h1 {
         font-size: var(--normar-font-size);
@@ -184,7 +192,7 @@
         width: 85px;
         height: 15px;
     }
-/*  ---------- portfolio graphic ---------- */
+/* ---------- portfolio graphic ---------- */
     .works__item h1 {
     font-size: var(--small-font-size);
     }
@@ -238,10 +246,14 @@
     .l_col_mobile_1_12 {
         width: 8.33333333%;
     }
-/* ---------- skills ---------- */
+/* ---------- intro ---------- */
+    .intro__ment--box {
+        top: 27%;
+    }
+/* ---------- skills  ---------- */
     .skills:before {
-        bottom: 20%;
-        right: 10px;
+        bottom: 25%;
+        right: 15px;
     }
 /* ---------- portfolio graphic ---------- */
     .works__content {
