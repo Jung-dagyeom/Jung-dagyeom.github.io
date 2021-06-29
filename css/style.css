@@ -474,7 +474,7 @@
     }
     .skills:before {
         content: '';
-        background: url(../image/skills-click_img.png) no-repeat center/cover;
+        background: url(../image/skills/skills-click_img.png) no-repeat center/cover;
         position: absolute;
         bottom: 25%;
         right: 20px;
