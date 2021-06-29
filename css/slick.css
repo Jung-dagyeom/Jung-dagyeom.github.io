@@ -65,9 +65,9 @@
 [dir='rtl'] .slick-slide {
     float: right;
 }
-.slick-slide img {
+/* .slick-slide img {
     display: inline-block;
-}
+} */
 .slick-slide.slick-loading img {
     display: none;
 }
