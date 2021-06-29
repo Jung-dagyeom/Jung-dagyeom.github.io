@@ -20,7 +20,6 @@
         
     /* ----- typography ----- */
         --body-font: 'Poppins', sans-serif;
-        --point-font:'MapoFlowerIsland', 'Noto Sans KR', sans-serif;
         --big-font-size: 3rem;
         --small-font-size: .8rem;
         --normal-font-size: 1.5rem;
@@ -425,7 +424,7 @@
         color: var(--purple-color);
     }
     .about__info--wrap {
-        padding: 1rem;
+        padding: 2rem 2rem;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     }
     .about__info--item {
@@ -433,12 +432,12 @@
     }
     .about__info--item:nth-child(1) {
         text-align: center;
-        padding: 0;
+        padding: 1rem 0;
        
     }
     .about__info--item .profile__img {
-        width: 120px;
-        height: 120px;
+        width: 155px;
+        height: 160px;
         border-radius: 110px;
         border: 5px inset var(--purple-color);
     }
@@ -505,7 +504,7 @@
     .skills__container {
         flex-wrap: wrap;
         width: 80%;
-        margin: 0 auto;
+        margin: 100px auto;
 
     }
     .skills__item {
@@ -596,7 +595,7 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
-        margin-top: 3rem;
+        margin-top: 4rem;
     }
     .works__item {
         display: flex;
@@ -727,7 +726,7 @@
     }
     /* ---------- web works ---------- */
     .slider__content {
-        padding: 1rem 2.3rem;
+        padding: 3rem 2.3rem;
         display: flex;
         height: 350px;
     }
@@ -758,6 +757,7 @@
     .slider__buttons {
         display: flex;
         justify-content: center;
+        padding-top: 1rem;
     }
     .slick__button:first-child {
         margin-right: var(--mb-1);
