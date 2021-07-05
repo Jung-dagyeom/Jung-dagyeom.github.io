@@ -160,14 +160,13 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 100vw;
     }
     .intro__contents {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 25vw;
+        width: 25%;
         text-align: center;
     }
     #intro__image {
@@ -274,7 +273,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50vw;
+        width: 80%;
         height: 50%;
     }
     .home__desc {
@@ -295,7 +294,7 @@
     .animation__line.left,
     .animation__line.right {
         position: absolute;
-        width: 75vw;
+        width: 150%;
         height: 17px;
     }
     .animation__line.top,

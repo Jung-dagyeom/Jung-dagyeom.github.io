@@ -250,6 +250,12 @@
         top: 25%;
         left: 50%;
     }
+/* ---------- home  ---------- */
+    .animation__line.left,
+    .animation__line.right {
+        /* width: 100%; */
+    }
+   
 /* ---------- skills  ---------- */
     .skills:before {
         bottom: 25%;
