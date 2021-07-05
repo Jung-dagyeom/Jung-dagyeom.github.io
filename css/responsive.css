@@ -60,7 +60,7 @@
         transform: translate(-50%, -15%);
         width: 100%;
         text-align: center;
-        font-size: 2rem;
+        /* font-size: 2rem; */
         color: var(--white-color);
     }
     .intro__ment--box {
