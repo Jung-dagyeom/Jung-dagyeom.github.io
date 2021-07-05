@@ -64,8 +64,6 @@
         color: var(--white-color);
     }
     .intro__ment--box {
-        top: 23%;
-        left: 65%;
         width: 200px;
     }
     .intro__bg {
@@ -81,8 +79,10 @@
         transform: translate(-50%, -50%);
     }
     .copyright {
-        display: block;
+        display: inline-block;
         font-size: var(--small-font-size);
+        width: 300px;
+        text-align: center;
     }
     /* ---------- header ---------- */
     .header {
@@ -208,7 +208,7 @@
     }
 }
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
-@media (max-width: 568px){
+@media (max-width: 480px){
 /* ---------- grid ---------- */
     .l_col_mobile_12_12 {
         width: 100%;

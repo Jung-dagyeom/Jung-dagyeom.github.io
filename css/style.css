@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 :root {
+
     /* -----basic colors ----- */
         --hue-color: 196;
         --primary-color: hsl(var(--hue-color), 69%, 46%);
@@ -174,7 +175,7 @@
         width: 50%;
     }
     #intro__image img {
-        filter: drop-shadow(10px 30px 10px #999);
+        filter: drop-shadow(5px 10px 10px #999);
     }
     #intro__image img:last-child {
         display: none;
@@ -387,13 +388,15 @@
     /* ========================= about section ========================= */
     .about {
         color: var(--black-color);
+        height: 100vh;
     }
     .about.inner {
         padding-top: 2rem;
     }
     .about__container {
-        height: 100vh;
         position: relative;
+        height: 100vh;
+        /* padding-top: 100%; */
     }
     .about__frame {
         position: absolute;
