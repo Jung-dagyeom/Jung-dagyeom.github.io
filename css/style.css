@@ -273,8 +273,8 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 80%;
-        height: 50%;
+        width: 70%;
+        height: 45%;
     }
     .home__desc {
         position: absolute;
@@ -294,31 +294,31 @@
     .animation__line.left,
     .animation__line.right {
         position: absolute;
-        width: 150%;
-        height: 17px;
+        width: 70vw;
+        height: 20px;
     }
     .animation__line.top,
     .animation__line.bottom {
         position: absolute;
-        width: 17px;
+        width: 20px;
         height: 75vh;
     }
     .left {
-        top: -17px;
-        right: -17px;
+        top: -20px;
+        right: -20px;
         animation: left 2.2s linear forwards;
         background: #f8aca1;
         box-shadow: 0 0 10px #f8aca1;
     }
     .right {
-        left: -17px;
-        bottom: -17px;
+        left: -20px;
+        bottom: -20px;
         animation: right 2.2s linear forwards;
         background: #98bde2;
         box-shadow: 0 0 10px #98bde2;
     }
     .top {
-        left: -17px;
+        left: -20px;
         bottom: 0;
         animation: top 2.2s linear forwards;
         background: #a1e4d1;
@@ -326,7 +326,7 @@
     }
     .bottom {
         top: 0;
-        right:-17px;
+        right:-20px;
         animation: bottom 2.2s linear forwards;
         background: #f8e273;
         box-shadow: 0 0 10px #f8e273;
@@ -383,19 +383,14 @@
             opacity: 1;
         }
     }
-
     /* ========================= about section ========================= */
     .about {
         color: var(--black-color);
         height: 100vh;
     }
-    .about.inner {
-        padding-top: 2rem;
-    }
     .about__container {
         position: relative;
-        height: 100vh;
-        /* padding-top: 100%; */
+        height: 100%;
     }
     .about__frame {
         position: absolute;
@@ -405,14 +400,15 @@
         border-radius: 1rem;
         box-shadow: 0 0 15px var(--gray-color-light);
         overflow: hidden;
+        margin-top: 1rem;
     }
     .about__frame:before {
         content: '';
         position: absolute;
-        top: -6px;
+        top: -7px;
         left: 50%;
         transform: translate(-50%);
-        width: 300px;
+        width: 50%;
         height: 50px;
         border-radius: 30px 30px 5px 5px;
         background: var(--purple-color);
@@ -427,14 +423,13 @@
     .about__info--wrap {
         padding: 2rem 2rem;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        
     }
     .about__info--item {
         font-weight: 600;
     }
     .about__info--item:nth-child(1) {
         text-align: center;
-        padding: 1rem 0;
-       
     }
     .about__info--item .profile__img {
         width: 155px;

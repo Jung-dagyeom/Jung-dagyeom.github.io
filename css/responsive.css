@@ -158,10 +158,13 @@
     .home__title {
         font-size: 3rem;
     }
+    .animation__line.left,
+    .animation__line.right {
+        width: 130%;
+    }
 /* ---------- About ---------- */
     .about__frame {
-        width: 85vw;
-        height: 85vh;
+        width: 100%;
     }
     .about .section__title--wrap {
         margin-top: 1rem;
@@ -169,12 +172,8 @@
     .about .section__title {
         font-size: var(--normal-font-size);
     }
-    .about__info--item .profile__img {
-        width: 200px;
-        height: 250px;
-    }
-    .about__info--item ul li {
-        font-size: var(--normar-font-size);
+    .about__info--wrap {
+        padding: 1rem;
     }
 /* ---------- skills  ---------- */
     .skills {
@@ -250,12 +249,6 @@
         top: 25%;
         left: 50%;
     }
-/* ---------- home  ---------- */
-    .animation__line.left,
-    .animation__line.right {
-        /* width: 100%; */
-    }
-   
 /* ---------- skills  ---------- */
     .skills:before {
         bottom: 25%;
