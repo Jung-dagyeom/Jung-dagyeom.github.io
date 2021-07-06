@@ -161,7 +161,7 @@
     }
     .animation__line.left,
     .animation__line.right {
-        width: 130%;
+        width: 120%;
     }
 /* ---------- About ---------- */
     .about__frame {
@@ -178,11 +178,8 @@
     }
 /* ---------- skills  ---------- */
     .skills:before {
-        bottom: 15%;
+        bottom: 50%;
         right: 15px;
-    }
-    .skills__container {
-        width: 100%;
     }
     .content h1 {
         font-size: var(--small-font-size);
@@ -204,6 +201,12 @@
     }
     .footer.inner {
        padding-top: 0;
+    }
+    .slick-prev {
+        left: -1rem;
+    }
+    .slick-next {
+        right: -1rem;
     }
 }
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
@@ -278,6 +281,12 @@
     }
     .works__item h1 {
         font-size: var(--normal-font-size);
+    }
+    .slick-prev {
+        left: -1rem;
+    }
+    .slick-next {
+        right: -1rem;
     }
 /* ---------- portfolio web ---------- */
     .slider__content {
