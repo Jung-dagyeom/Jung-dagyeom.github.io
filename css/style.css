@@ -301,7 +301,7 @@
     .animation__line.bottom {
         position: absolute;
         width: 20px;
-        height: 75vh;
+        height: 70vh;
     }
     .left {
         top: -20px;

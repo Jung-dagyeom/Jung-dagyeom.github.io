@@ -159,9 +159,32 @@
     .home__title {
         font-size: 3rem;
     }
+    .home__intro {
+        width: 90%;
+    }
     .animation__line.left,
     .animation__line.right {
-        width: 120%;
+        width: 100%;
+    }
+    .animation__line.top,
+    .animation__line.bottom {
+        height: 100%;
+    }
+    .left {
+        top: 0;
+        right: 0;
+    }
+    .right {
+        left: 0;
+        bottom: 0;
+    }
+    .top {
+        left: 0;
+        bottom: 0;
+    }
+    .bottom {
+        top: 0;
+        right: 0;
     }
 /* ---------- About ---------- */
     .about__frame {
@@ -252,6 +275,10 @@
     .intro__ment--box {
         top: 25%;
         left: 50%;
+    }
+/* ---------- home  ---------- */
+    .home__intro {
+        width: 90%;
     }
 /* ---------- about  ---------- */
     .about__info--item {
