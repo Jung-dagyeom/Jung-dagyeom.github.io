@@ -178,7 +178,7 @@
     }
 /* ---------- skills  ---------- */
     .skills:before {
-        bottom: 20%;
+        bottom: 15%;
         right: 15px;
     }
     .skills__container {

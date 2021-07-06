@@ -745,7 +745,12 @@
     }
     .slider__img {
         flex: 1;
+        padding: 1rem;
     }
+    .slider__img img {
+        
+    }
+
     .slider__desc {
         flex: 1;
         display: flex;
@@ -780,10 +785,10 @@
         cursor: pointer;
     }
     .slick-prev {
-        left: -2rem;
+        left: 1rem;
     }
     .slick-next {
-        right: -2rem;
+        right: 1rem;
     }
     .slick-prev:after,
     .slick-next:after{
