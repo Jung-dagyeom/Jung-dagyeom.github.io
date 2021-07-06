@@ -12,7 +12,7 @@
     }
 /* ---------- layout ---------- */
     .inner {
-        padding: 2rem 2rem;
+        padding: 2rem 1rem;
     }
 /* ---------- grid ---------- */
     .l_col_tablet_12_12 {
@@ -125,6 +125,7 @@
         margin-right: 0;
         text-align: center;
         padding: 1rem;
+        color: #000;
     }
     .nav__link {
         display: flex;
@@ -176,15 +177,15 @@
         padding: 1rem;
     }
 /* ---------- skills  ---------- */
-    .skills {
-        height: 65vh; 
-    }
     .skills:before {
-        bottom: 15%;
+        bottom: 20%;
         right: 15px;
     }
+    .skills__container {
+        width: 100%;
+    }
     .content h1 {
-        font-size: var(--normar-font-size);
+        font-size: var(--small-font-size);
     }
     .skills .section__title:before {
         width: 85px;
@@ -249,12 +250,22 @@
         top: 25%;
         left: 50%;
     }
+/* ---------- about  ---------- */
+    .about__info--item {
+        margin-bottom: .5rem;
+    }
 /* ---------- skills  ---------- */
+    .skills .section__subtitle {
+        font-size: var(--small-font-size);
+    }
     .skills:before {
-        bottom: 25%;
+        bottom: 35%;
         right: 15px;
     }
 /* ---------- portfolio graphic ---------- */
+    .portfolio .section__subtitle {
+        font-size: var(--small-font-size);
+    }
     .works__content {
         flex-wrap: wrap;
         justify-content: center;
