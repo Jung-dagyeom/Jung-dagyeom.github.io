@@ -215,6 +215,9 @@
     .works__item h1 {
     font-size: var(--small-font-size);
     }
+    .works__modal-content {
+        width: 85%;
+    }
 /* ---------- footer ---------- */
     .footer__logo {
         display: none;
@@ -314,9 +317,6 @@
     }
     .slick-next {
         right: -1rem;
-    }
-    .works__modal-content {
-        width: 80%;
     }
 /* ---------- portfolio web ---------- */
     .slider__content {
