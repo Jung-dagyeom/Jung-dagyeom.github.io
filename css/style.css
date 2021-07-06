@@ -467,7 +467,6 @@
     /* ========================= skills section ========================= */
     .skills {
         position: relative;
-        height: 100vh;
     }
     .skills:before {
         content: '';

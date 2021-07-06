@@ -201,7 +201,7 @@
     }
 /* ---------- skills  ---------- */
     .skills:before {
-        bottom: 50%;
+        bottom: 20%;
         right: 15px;
     }
     .content h1 {
@@ -292,7 +292,7 @@
         font-size: var(--small-font-size);
     }
     .skills:before {
-        bottom: 35%;
+        bottom: 0;
         right: 15px;
     }
 /* ---------- portfolio graphic ---------- */
