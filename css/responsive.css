@@ -304,6 +304,7 @@
         justify-content: center;
     }
     .works__item {
+        -webkit-tap-highlight-color: transparent;
         margin-right: 2%;
         width: 46.5%;
         flex: auto;
@@ -311,6 +312,9 @@
     }
     .works__item h1 {
         font-size: var(--normal-font-size);
+    }
+    .works__item-button {
+        display: inline-block;
     }
     .slick-prev {
         left: -1rem;
