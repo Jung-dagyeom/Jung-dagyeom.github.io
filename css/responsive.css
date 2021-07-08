@@ -287,10 +287,6 @@
     .about__info--item {
         margin-bottom: .5rem;
     }
-    .about__info--item .profile__img {
-        width: 100px;
-        height: 100px;
-    }
 /* ---------- skills  ---------- */
     .skills .section__subtitle {
         font-size: var(--small-font-size);
