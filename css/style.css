@@ -387,10 +387,7 @@
     .about {
         color: var(--black-color);
         height: 100vh;
-    }
-    .about__container {
         position: relative;
-        height: 100%;
     }
     .about__frame {
         position: absolute;
@@ -423,7 +420,8 @@
     .about__info--wrap {
         padding: 2rem 2rem;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        
+        display: flex;
+        flex-direction: column;
     }
     .about__info--item {
         font-weight: 600;
@@ -440,6 +438,7 @@
     .info__title {
         position: relative;
         margin-bottom: var(--mb-1);
+        color: var(--purple-color);
     }
     .info__title:after {
         content: '';
@@ -450,9 +449,6 @@
         height: 3.5px;
         background: var(--purple-color);
         border-radius: 100px;
-    }
-    .info__title h3 {
-        color: var(--purple-color);
     }
     .about__info--item ul li{
         display: inline-block;
