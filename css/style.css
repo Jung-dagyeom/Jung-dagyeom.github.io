@@ -387,6 +387,8 @@
     .about {
         color: var(--black-color);
         height: 100vh;
+    }
+    .about.inner {
         position: relative;
     }
     .about__frame {

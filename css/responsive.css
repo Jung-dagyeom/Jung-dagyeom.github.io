@@ -157,7 +157,7 @@
     }
 /* ---------- Home ---------- */
     .home__title {
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .home__intro {
         width: 90%;
@@ -188,16 +188,20 @@
     }
 /* ---------- About ---------- */
     .about__frame {
-        width: 100%;
-    }
-    .about .section__title--wrap {
-        margin-top: 1rem;
+        width: 90%;
     }
     .about .section__title {
         font-size: var(--normal-font-size);
     }
     .about__info--wrap {
         padding: 1rem;
+    }
+    .about__info--item .profile__img {
+        width: 180px;
+        height: 200px;
+    }
+    .about__info--item {
+        margin-bottom: .5rem;
     }
 /* ---------- skills  ---------- */
     .skills:before {
@@ -280,12 +284,22 @@
         left: 50%;
     }
 /* ---------- home  ---------- */
+    .home__title {
+        font-size: 3rem;
+    }
     .home__intro {
         width: 90%;
     }
 /* ---------- about  ---------- */
-    .about__info--item {
-        margin-bottom: .5rem;
+    .about__frame {
+        width: 90%;
+    }
+    .about__info--item ul {
+        font-size: .6rem;
+    }
+    .about__info--item .profile__img {
+        width: 135px;
+        height: 150px;
     }
 /* ---------- skills  ---------- */
     .skills .section__subtitle {
