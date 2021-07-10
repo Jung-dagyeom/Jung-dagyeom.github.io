@@ -222,6 +222,12 @@
     .works__modal-content {
         width: 85%;
     }
+    .slick-prev {
+        left: -1rem;
+    }
+    .slick-next {
+        right: -1rem;
+    }
 /* ---------- footer ---------- */
     .footer__logo {
         display: none;
@@ -231,12 +237,6 @@
     }
     .footer.inner {
        padding-top: 0;
-    }
-    .slick-prev {
-        left: -1rem;
-    }
-    .slick-next {
-        right: -1rem;
     }
 }
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
