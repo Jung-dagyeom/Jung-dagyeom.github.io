@@ -323,20 +323,8 @@
         flex: auto;
         margin-bottom: 1rem;
     }
-    .works__item:hover .works__item-button {
-        /* display: none; */
-    }
     .works__item h1 {
         font-size: var(--normal-font-size);
-    }
-    .works__item-button {
-        /* display: inline-block; */
-    }
-    .slick-prev {
-        left: -1rem;
-    }
-    .slick-next {
-        right: -1rem;
     }
 /* ---------- portfolio web ---------- */
     .slider__content {

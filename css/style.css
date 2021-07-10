@@ -776,10 +776,10 @@
         cursor: pointer;
     }
     .slick-prev {
-        left: -1.5rem;
+        left: -2rem;
     }
     .slick-next {
-        right: -1.5rem;
+        right: -2rem;
     }
     .slick-prev:after,
     .slick-next:after{

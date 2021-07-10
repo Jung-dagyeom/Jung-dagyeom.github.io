@@ -54,11 +54,8 @@ $(function(){
     /* ---------- web works ---------- */
     $('.custom__slider').slick({
         dots:true,
-        fade: true,
-        infinite: true,
-        // cssEase: 'linear',
-        // autoplay: true,
-        // autoplaySpeed: 2000,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
     /* ---------- gallery ---------- */
       $(function(){
