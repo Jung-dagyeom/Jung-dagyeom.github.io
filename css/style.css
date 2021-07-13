@@ -457,6 +457,7 @@
         font-size: .5rem;
         margin-right: .5rem;
         color: var(--gray-color);
+        border: 1px solid #000;
     }
     .about__info--item span {
         color: var(--gray-color-light);
