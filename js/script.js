@@ -89,8 +89,15 @@ $(function(){
         autoplaySpeed: 2000, */
     });
     /* ---------- gallery ---------- */
-    
-    
+    $('#moreButton').click(function(){
+        if($('#moreButton').hasClass('#moreButton')){
+            $('#moreButton').addClass('#closeButton').removeClass('#moreButton');
+            $('#moreItem').css('visibility', 'visible');
+        }else if($('#closeButton').hasClass('close')){
+            $('#closeButton').addClass('more').removeClass('close');  
+            $('#moreItem').css('visibility', 'hidden');
+        }
+    });
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;
     var $scrollUp = $('.scrollup');
