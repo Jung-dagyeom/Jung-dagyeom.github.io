@@ -170,9 +170,14 @@
         font-size: var(--small-font-size);
     }
     .skills .section__title:before {
-        width: 320px;
+        width: 90px;
         height: 15px;
     }
+/* ---------- portfolio ---------- */
+    .works__content {
+        flex-direction: column;
+    }   
+    
 /* ---------- footer ---------- */
     .footer__logo {
         display: none;

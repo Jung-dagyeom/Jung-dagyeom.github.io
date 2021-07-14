@@ -77,7 +77,6 @@ $(function(){
             $('.works__modal .modal__detail').attr('src', src)
             $('.works__modal').show();
     })
-
     $('.works__modal').click(function(e){
         if(e.target === e.currentTarget){
             $(this).hide();
@@ -89,7 +88,9 @@ $(function(){
         /* autoplay: true,
         autoplaySpeed: 2000, */
     });
-
+    /* ---------- gallery ---------- */
+    
+    
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;
     var $scrollUp = $('.scrollup');
