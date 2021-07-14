@@ -14,55 +14,7 @@
     .inner {
         padding: 2rem 1rem;
     }
-/* ---------- grid ---------- */
-    .l_col_tablet_12_12 {
-        width: 100%;
-    }
-    .l_col_tablet_11_12 {
-        width: 91.66666667%;
-    }
-    .l_col_tablet_10_12 {
-        width: 83.33333333%;
-    }
-    .l_col_tablet_9_12 {
-        width: 75%;
-    }
-    .l_col_tablet_8_12 {
-        width: 66.66666667%;
-    }
-    .l_col_tablet_7_12 {
-        width: 58.33333333%;
-    }
-    .l_col_tablet_6_12 {
-        width: 50%;
-    }
-    .l_col_tablet_5_12 {
-        width: 41.66666667%;
-    }
-    .l_col_tablet_4_12 {
-        width: 33.33333333%;
-    }
-    .l_col_tablet_3_12 {
-        width: 25%;
-    }
-    .l_col_tablet_2_12 {
-        width: 16.66666667%;
-    }
-    .l_col_tablet_1_12 {
-        width: 8.33333333%;
-    }    
 /* ---------- intro ---------- */
-    .intro__title {
-        display: block;
-        position: absolute;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -15%);
-        width: 100%;
-        text-align: center;
-        font-size: 2rem;
-        color: var(--white-color);
-    }
     .intro__ment--box {
         top: 25%;
     }
@@ -157,7 +109,10 @@
     }
 /* ---------- Home ---------- */
     .home__title {
-        font-size: 5rem;
+        font-size: 2rem;
+    }
+    .home__subtitle {
+        font-size: 1rem;
     }
     .home__intro {
         width: 90%;
@@ -194,7 +149,7 @@
         font-size: var(--normal-font-size);
     }
     .about__info--wrap {
-        padding: 1rem;
+        padding: .5rem;
     }
     .about__info--item .profile__img {
         width: 180px;
@@ -202,6 +157,9 @@
     }
     .about__info--item {
         margin-bottom: .5rem;
+    }
+    .info__title {
+        margin-bottom: .3rem;
     }
 /* ---------- skills  ---------- */
     .skills:before {
@@ -212,21 +170,8 @@
         font-size: var(--small-font-size);
     }
     .skills .section__title:before {
-        width: 85px;
+        width: 320px;
         height: 15px;
-    }
-/* ---------- portfolio graphic ---------- */
-    .works__item h1 {
-    font-size: var(--small-font-size);
-    }
-    .works__modal-content {
-        width: 85%;
-    }
-    .slick-prev {
-        left: -1rem;
-    }
-    .slick-next {
-        right: -1rem;
     }
 /* ---------- footer ---------- */
     .footer__logo {
@@ -241,43 +186,6 @@
 }
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
 @media (max-width: 480px){
-/* ---------- grid ---------- */
-    .l_col_mobile_12_12 {
-        width: 100%;
-    }
-    .l_col_mobile_11_12 {
-        width: 91.66666667%;
-    }
-    .l_col_mobile_10_12 {
-        width: 83.33333333%;
-    }
-    .l_col_mobile_9_12 {
-        width: 75%;
-    }
-    .l_col_mobile_8_12 {
-        width: 66.66666667%;
-    }
-    .l_col_mobile_7_12 {
-        width: 58.33333333%;
-    }
-    .l_col_mobile_6_12 {
-        width: 50%;
-    }
-    .l_col_mobile_5_12 {
-        width: 41.66666667%;
-    }
-    .l_col_mobile_4_12 {
-        width: 33.33333333%;
-    }
-    .l_col_mobile_3_12 {
-        width: 25%;
-    }
-    .l_col_mobile_2_12 {
-        width: 16.66666667%;
-    }
-    .l_col_mobile_1_12 {
-        width: 8.33333333%;
-    }
 /* ---------- intro ---------- */
     .intro__ment--box {
         top: 25%;
@@ -285,10 +193,13 @@
     }
 /* ---------- home  ---------- */
     .home__title {
-        font-size: 3rem;
+        font-size: 1rem;
+    }
+    .home__subtitle {
+        font-size: .6rem;
     }
     .home__intro {
-        width: 90%;
+        width: 95%;
     }
 /* ---------- about  ---------- */
     .about__frame {
@@ -308,31 +219,6 @@
     .skills:before {
         bottom: 0;
         right: 15px;
-    }
-/* ---------- portfolio graphic ---------- */
-    .portfolio .section__subtitle {
-        font-size: var(--small-font-size);
-    }
-    .works__content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .works__item {
-        margin-right: 2%;
-        width: 46.5%;
-        flex: auto;
-        margin-bottom: 1rem;
-    }
-    .works__item h1 {
-        font-size: var(--normal-font-size);
-    }
-/* ---------- portfolio web ---------- */
-    .slider__content {
-        flex-direction: column;
-        text-align: center;
-    }
-    .slick__button {
-        align-self: center;
     }
 /* ---------- Footer ---------- */
     .footer__copy {

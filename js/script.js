@@ -37,44 +37,6 @@ $(function(){
         $(this).find('.skills__stack').toggle();
         $(this).find('.skills__percentage').toggle();
     })
-    /* ================= portfolio ================= */
-    /* ---------- graphic works ---------- */
-    $('.works__item-button').click(function(e){
-            e.preventDefault();
-            var src = $(this).attr('data-src') ;
-            $('.works__modal .modal__detail').attr('src', src)
-            $('.works__modal').show();
-    })
-
-    $('.works__modal').click(function(e){
-        if(e.target === e.currentTarget){
-            $(this).hide();
-        }
-    })
-    /* ---------- web works ---------- */
-    $('.custom__slider').slick({
-        dots:true,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
-    /* ---------- gallery ---------- */
-      $(function(){
-          var $moreBtn = $('#moreButton');
-          var $moreItem = $('#moreItem');
-
-          $moreBtn.click(function(event){
-            event.preventDefault();
-            // $moreItem 숨겨진 상태면
-            if( $moreItem.is(':visible') ){
-                $moreItem.slideUp();
-                $moreBtn.text('more +');
-                // $moreItem 펼쳐진 상태면
-            }else{
-                $moreItem.slideDown();
-                $moreBtn.text('close -');
-            }
-          })
-      });
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;
     var $scrollUp = $('.scrollup');
