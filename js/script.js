@@ -89,14 +89,16 @@ $(function(){
         autoplaySpeed: 2000, */
     });
     /* ---------- gallery ---------- */
-    $('#moreButton').click(function(){
-        if($('#moreButton').hasClass('#moreButton')){
-            $('#moreButton').addClass('#closeButton').removeClass('#moreButton');
-            $('#moreItem').css('visibility', 'visible');
-        }else if($('#closeButton').hasClass('close')){
-            $('#closeButton').addClass('more').removeClass('close');  
-            $('#moreItem').css('visibility', 'hidden');
+    $('#moreButton').click(function(e){
+        if($(this).html() == 'close -') {
+            $(this).html('more +');
         }
+        else {
+            $(this).html('close -');
+        }
+        $(this).show('#moreItem').toggleClass();
+        $(this).siblings('#moreItem').stop().slideToggle();
+        $('#moreButton').stop().toggleClass();
     });
     /* ================= scroll up ================= */
     var skillsDistance = $('#skills').offset().top;

@@ -10,6 +10,43 @@
         --normal-font-size: 1.5rem;
         --big-font-size: 2rem;
     }
+/* ---------- grid ---------- */
+      .l_col_tablet_12_12 {
+        width: 100%;
+    }
+    .l_col_tablet_11_12 {
+        width: 91.66666667%;
+    }
+    .l_col_tablet_10_12 {
+        width: 83.33333333%;
+    }
+    .l_col_tablet_9_12 {
+        width: 75%;
+    }
+    .l_col_tablet_8_12 {
+        width: 66.66666667%;
+    }
+    .l_col_tablet_7_12 {
+        width: 58.33333333%;
+    }
+    .l_col_tablet_6_12 {
+        width: 50%;
+    }
+    .l_col_tablet_5_12 {
+        width: 41.66666667%;
+    }
+    .l_col_tablet_4_12 {
+        width: 33.33333333%;
+    }
+    .l_col_tablet_3_12 {
+        width: 25%;
+    }
+    .l_col_tablet_2_12 {
+        width: 16.66666667%;
+    }
+    .l_col_tablet_1_12 {
+        width: 8.33333333%;
+    }
 /* ---------- layout ---------- */
     .inner {
         padding: 2rem 1rem;
@@ -174,14 +211,20 @@
         height: 15px;
     }
 /* ---------- portfolio ---------- */
+    .works__content {
+        flex-direction: column;
+
+    }
+    .works__item {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
     .works__item h1 {
-    font-size: var(--small-font-size);
-    border: 1px solid #000;
+    font-size: var(--normal-font-size);
     }
     .works__modal-content {
         width: 85%;
-    }  
-    
+    }
 /* ---------- footer ---------- */
     .footer__logo {
         display: none;
@@ -195,6 +238,43 @@
 }
 /* >>>>>>>>>>>>>>> Mobile >>>>>>>>>>>>>>> */
 @media (max-width: 480px){
+    /* ---------- grid ---------- */
+    .l_col_mobile_12_12 {
+        width: 100%;
+    }
+    .l_col_mobile_11_12 {
+        width: 91.66666667%;
+    }
+    .l_col_mobile_10_12 {
+        width: 83.33333333%;
+    }
+    .l_col_mobile_9_12 {
+        width: 75%;
+    }
+    .l_col_mobile_8_12 {
+        width: 66.66666667%;
+    }
+    .l_col_mobile_7_12 {
+        width: 58.33333333%;
+    }
+    .l_col_mobile_6_12 {
+        width: 50%;
+    }
+    .l_col_mobile_5_12 {
+        width: 41.66666667%;
+    }
+    .l_col_mobile_4_12 {
+        width: 33.33333333%;
+    }
+    .l_col_mobile_3_12 {
+        width: 25%;
+    }
+    .l_col_mobile_2_12 {
+        width: 16.66666667%;
+    }
+    .l_col_mobile_1_12 {
+        width: 8.33333333%;
+    }
 /* ---------- intro ---------- */
     .intro__ment--box {
         top: 25%;
@@ -229,6 +309,14 @@
         bottom: 0;
         right: 15px;
     }
+/* ---------- portfolio  ---------- */ 
+    .slider__content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slick__button {
+        align-self: center;
+    }   
 /* ---------- Footer ---------- */
     .footer__copy {
         padding-bottom: 3rem;
