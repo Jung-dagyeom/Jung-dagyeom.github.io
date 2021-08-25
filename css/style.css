@@ -152,10 +152,10 @@
         max-width: 100%;
     }
     .intro__bg {
-        position: absolute;
+        /* position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); */
     }
     .intro__contents {
         position: absolute;
@@ -720,10 +720,6 @@
     }
     .slick__button:hover {
         background: var(--blue-color);
-    }
-    .custom__slider {
-        max-width: 660px;
-        margin: 0 auto;
     }
     .slider__content {
         display: flex;
